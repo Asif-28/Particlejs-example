@@ -1,3 +1,69 @@
-.name {
+.about__us {
+  /* padding: 0 20px; */
+  margin: 0 auto;
+  position: relative;
+  /* height: 100vh; */
+  background: url("https://images3.alphacoders.com/108/1082567.jpg") center
+    fixed no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  position: relative;
+}
+.about__gradient {
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
   height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+.position {
+  position: absolute;
+  top: 0;
+  left: auto;
+  margin: 0 auto;
+  color: white;
+}
+.detail {
+  padding-top: 3rem;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.detail > p {
+  text-align: left;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+.detail > h1 {
+  text-align: center;
+  margin-bottom: 16px;
+  /* color: red; */
+}
+.info > p {
+  text-align: left;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+.info > h3 {
+  margin: 10px;
+  font-size: 2rem;
+  color: rgb(208, 156, 11);
+}
+.info > h1 {
+  color: red;
+}
+.info {
+  width: 70%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
 }
