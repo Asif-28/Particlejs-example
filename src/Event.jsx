@@ -1,11 +1,33 @@
 import React from "react";
 import "./Event.css";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 const Event = () => {
   return (
     <div className="container">
-      <div className="left">
-        <img className="container__image" src="img/techno.jpg" alt="IMG" />
-        <div className="details">
+      <div
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        // data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        className="left"
+      >
+        <div className="container__image ">
+          <img className="" src="img/techno.jpg" alt="IMG" />
+        </div>
+
+        <div
+          data-aos="fade-right"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="1000"
+          className="details"
+        >
           <h1>Techno Main Salt Lake</h1>
           <p>
             Techno Main Salt Lake (Erst while Techno India) was established in
@@ -24,10 +46,20 @@ const Event = () => {
       </div>
       <div className="right">
         <div className="background">
-          <div className="heading__ankuran">
+          <div className="background__gradient" />
+          <div
+            data-aos="fade-left"
+            data-aos-offset="50"
+            data-aos-duration="800"
+            className="heading__ankuran"
+          >
             <h1>The Annual Cultural Festival of Techno Main Salt Lake</h1>
           </div>
-          <div className="anakronos">
+          <div
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            className="anakronos"
+          >
             <h1>Anakronos</h1>
             <p>
               is one of the most prominent college fest across Kolkata. It is
@@ -40,10 +72,9 @@ const Event = () => {
               for our 19th season we are all set to take things to a greater
               level. Anakhronos is coming back with full on zest and going
               offline once again. We promise it will be an unforgettable
-              extravaganza.{" "}
+              extravaganza.
             </p>
           </div>
-          <div className="background__gradient" />
         </div>
       </div>
     </div>

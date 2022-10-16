@@ -1,25 +1,35 @@
 .container {
   display: flex;
-  gap: 10px;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .left {
   flex: 2;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(239, 245, 247),
+    rgb(205, 220, 232),
+    rgb(214, 202, 235),
+    rgb(230, 189, 240)
+  );
 }
 
 .right {
   flex: 3;
-  overflow-y: hidden;
 }
 .container__image {
-  height: 300px;
+  min-height: 100px;
   max-width: 500px;
   width: 100%;
-  border: 5px solid black;
+  box-shadow: 8px 8px 5px 1px #999;
   margin: 0 auto;
   display: flex;
   margin-top: 5px;
 }
+.container__image > img {
+  width: 100%;
+  height: 100%;
+}
+
 .details {
   display: flex;
   flex-direction: column;
@@ -28,10 +38,11 @@
 }
 .details > p {
   width: 90%;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 0px 20px;
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.7;
+  color: rgba(50, 51, 51, 0.8);
 }
 .details > h1 {
   text-align: left;
@@ -41,16 +52,16 @@
   text-decoration: underline;
 }
 .background {
-  background: url("https://png.pngtree.com/thumb_back/fh260/background/20190827/pngtree-random-energy-wave-background-image_307670.jpg")
-    center fixed no-repeat;
+  background: url("https://images3.alphacoders.com/108/1082567.jpg") center
+    fixed no-repeat;
   background-size: cover;
-  object-fit: contain;
+  /* object-fit: contain; */
   position: relative;
 }
 .background__gradient {
   width: 100%;
   height: 100vh;
-  /* z-index: 1; */
+  z-index: 1;
   background: rgba(0, 0, 0, 0.4);
   background-image: linear-gradient(
     to top,
@@ -69,30 +80,106 @@
   background-color: rgb(177, 48, 48);
   padding: 12px;
   border-radius: 12px;
-  width: 80%;
+  max-width: 80%;
 }
 .heading__ankuran > h1 {
   color: #fff;
 
-  /* margin: 0 auto; */
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   text-decoration: underline;
 }
 .anakronos {
   color: #fff;
   width: 50%;
-  background-color: rgba(30, 30, 30, 0.9);
-  /* padding: 20px; */
+  background-color: rgba(30, 30, 30, 0.8);
   position: absolute;
   top: 10rem;
   left: 5rem;
   padding: 20px;
 }
+.anakronos h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(239, 158, 35);
+}
 .anakronos p {
   letter-spacing: 1px;
-  line-height: 2;
-  padding: 10px;
+  line-height: 1.8;
+  padding: 0.7rem;
+  color: rgb(242, 165, 50);
 }
-.anakronos h1 {
-  text-align: center;
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+  .anakronos {
+    width: 90%;
+    top: 9rem;
+    left: 1.5rem;
+  }
+  .anakronos > h1 {
+    font-size: 0.9rem;
+  }
+  .anakronos > p {
+    font-size: 0.7rem;
+  }
+  .details > p {
+    font-size: 10px;
+  }
+  .details > h1 {
+    font-size: 1rem;
+  }
+  .heading__ankuran > h1 {
+    font-size: 1rem;
+  }
+  .container__image {
+    max-width: 80vw;
+    min-height: 100px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .anakronos {
+    width: 80%;
+    left: 3rem;
+  }
+  .heading__ankuran > h1 {
+    font-size: 1rem;
+  }
+  .anakronos > p {
+    font-size: 0.6rem;
+  }
+  .details > p {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+  .details > h1 {
+    font-size: 1rem;
+  }
+  .anakronos > h1 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+  .anakronos {
+    width: 80%;
+    left: 4.5rem;
+  }
+  .heading__ankuran > h1 {
+    font-size: 1.5rem;
+  }
+  .anakronos > p {
+    font-size: 0.8rem;
+  }
+  .details > p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .details > h1 {
+    font-size: 2rem;
+  }
+  .anakronos > h1 {
+    font-size: 1.7rem;
+  }
 }
