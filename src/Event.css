@@ -4,13 +4,13 @@
 }
 .left {
   flex: 2;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom,
     rgb(239, 245, 247),
     rgb(205, 220, 232),
     rgb(214, 202, 235),
     rgb(230, 189, 240)
-  );
+  ); */
 }
 
 .right {
@@ -20,7 +20,7 @@
   min-height: 100px;
   max-width: 300px;
   width: 100%;
-  box-shadow: 8px 8px 5px 1px #999;
+  box-shadow: 8px 8px 5px 1px rgb(204, 25, 25);
   margin: 0 auto;
   display: flex;
   margin-top: 5px;
@@ -42,7 +42,8 @@
   padding: 0px 20px;
   text-align: left;
   line-height: 1.5;
-  color: rgba(50, 51, 51, 0.8);
+  /* color: rgba(50, 51, 51, 0.8); */
+  color: #fff;
 }
 .details > h1 {
   text-align: left;
@@ -52,9 +53,9 @@
   text-decoration: underline;
 }
 .background {
-  background: url("https://images3.alphacoders.com/108/1082567.jpg") center
+  /* background: url("https://images3.alphacoders.com/108/1082567.jpg") center
     fixed no-repeat;
-  background-size: cover;
+  background-size: cover; */
   /* object-fit: contain; */
   position: relative;
 }
@@ -62,13 +63,13 @@
   width: 100%;
   height: 100vh;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.4);
-  background-image: linear-gradient(
+  /* background: rgba(0, 0, 0, 0.4); */
+  /* background-image: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.8) 0,
     rgba(0, 0, 0, 0) 60%,
     rgba(0, 0, 0, 0.8) 100%
-  );
+  ); */
 }
 .heading__ankuran {
   position: absolute;

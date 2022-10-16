@@ -4,7 +4,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <div className="about__us">
-      <div className="about__gradient"></div>
+      {/* <div className="about__gradient"></div>
       <div className="position">
         <div className="detail">
           <h1>Techno Main Salt Lake</h1>
@@ -38,7 +38,7 @@ const Home = () => {
             promise it will be an unforgettable extravaganza.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
