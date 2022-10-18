@@ -1,32 +1,5 @@
-body {
-  --black: #000000;
-  --ash-black: #222;
-  --white: #fafafa;
-  --sky: #00ccff;
-  --green: #22dddd;
-  --blue: #1300ff;
-  --dusk: #6600ff;
-  --purple: #9900ff;
-  --pink: #ff0066;
-  --red: #fe0222;
-  --orange: #fd7702;
-  --yellow: #ffbb00;
-
-  --background: var(--white);
-  --accent: var(--black);
-
-  margin: 0;
-  padding: 0;
-  background-color: var(--background);
-  color: var(--accent);
-  padding-bottom: 100px;
-}
-
-* {
-  font-family: sofia-pro, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
+.cont {
+  background-color: #2239af;
 }
 
 h1,
@@ -40,7 +13,7 @@ h3 {
 h1 {
   font-size: 36px;
   font-weight: 700;
-  letter-spacing: 8px;
+  letter-spacing: 2px;
   line-height: 1.2;
   text-align: center;
   margin: 100px 0 40px;
@@ -58,52 +31,6 @@ p {
   color: #fff;
 }
 
-/* footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px;
-  background-image: radial-gradient(
-    rgba(0, 0, 0, 0) 1px,
-    var(--background) 1px
-  );
-  background-size: 4px 4px;
-  backdrop-filter: blur(3px);
-  font-size: 14px;
-  line-height: 14px;
-} */
-
-/* footer::before {
-  display: block;
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: rgb(0, 0, 0);
-  opacity: 0.2;
-} */
-
-/* footer svg {
-  margin-right: 20px;
-}
-
-footer a {
-  text-decoration: none;
-  color: var(--accent);
-}
-
-code {
-  font-family: input-mono, monospace;
-  font-weight: 400;
-  font-style: normal;
-} */
-
 article {
   max-width: 680px;
   padding: 20px;
@@ -111,14 +38,11 @@ article {
 }
 
 .progress-bar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   height: 10px;
   background: rgb(227, 16, 174);
   transform-origin: 0%;
-}
-.cont {
-  background-color: #2239af;
 }
