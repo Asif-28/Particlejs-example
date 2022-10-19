@@ -5,6 +5,7 @@ import Home from "./Home";
 // import Particles from "react-particles-js";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import Search from "./Search";
 
 function App() {
   const particlesInit = async (main) => {
@@ -292,7 +293,9 @@ function App() {
       />
 
       <Event />
+
       <Footer />
+      <Search />
     </div>
   );
 }

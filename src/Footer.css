@@ -1,5 +1,5 @@
 .cont {
-  background-color: #2239af;
+  background-color: #fe636b;
 }
 
 h1,
@@ -43,6 +43,6 @@ article {
   left: 0;
   right: 0;
   height: 10px;
-  background: rgb(227, 16, 174);
-  transform-origin: 0%;
+  background: rgb(255, 255, 255, 0.6);
+  /* transform-origin: 0%; */
 }
