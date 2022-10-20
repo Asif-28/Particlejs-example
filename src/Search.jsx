@@ -5,6 +5,7 @@ const Search = () => {
   return (
     <>
       <input type="email" placeholder="Email address" />
+      <input type="number" placeholder="Number" />
     </>
   );
 };
