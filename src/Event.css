@@ -1,7 +1,7 @@
 .container {
   display: flex;
   /* height: 100vh; */
-  background-color: rgb(177, 48, 48);
+  background-color: rgb(104, 48, 177);
   padding-bottom: 1rem;
   padding-top: 1rem;
 }
