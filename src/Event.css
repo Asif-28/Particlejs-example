@@ -1,19 +1,12 @@
 .container {
   display: flex;
-  /* height: 100vh; */
+  height: 100vh;
   background-color: rgb(104, 48, 177);
   padding-bottom: 1rem;
   padding-top: 1rem;
 }
 .left {
   flex: 2;
-  /* background-image: linear-gradient(
-    to bottom,
-    rgb(239, 245, 247),
-    rgb(205, 220, 232),
-    rgb(214, 202, 235),
-    rgb(230, 189, 240)
-  ); */
 }
 
 .right {
@@ -55,32 +48,12 @@
   letter-spacing: 1px;
   text-decoration: underline;
 }
-.background {
-  /* background: url("https://images3.alphacoders.com/108/1082567.jpg") center
-    fixed no-repeat;
-  background-size: cover; */
-  /* object-fit: contain; */
-  /* position: relative; */
-}
+
 .background__gradient {
   width: 100%;
-  /* height: 100vh; */
   z-index: 1;
-  /* background: rgba(0, 0, 0, 0.4); */
-  /* background-image: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.8) 0,
-    rgba(0, 0, 0, 0) 60%,
-    rgba(0, 0, 0, 0.8) 100%
-  ); */
 }
 .heading__ankuran {
-  /* position: absolute;
-  top: 8%;
-  left: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
   background-color: rgb(177, 48, 48);
   padding: 12px;
   border-radius: 12px;
@@ -97,20 +70,11 @@
 }
 .anakronos {
   color: #fff;
-  /* width: 90%; */
-  /* display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center; */
-  /* margin: 0px auto; */
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   width: 70%;
   background-color: rgba(30, 30, 30, 0.8);
-  /* position: absolute;
-  top: 12rem;
-  left: 2rem; */
   padding: 20px;
 }
 .anakronos h1 {

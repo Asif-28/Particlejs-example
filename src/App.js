@@ -1,11 +1,8 @@
 import "./App.css";
 import Event from "./Event";
-import Footer from "./Footer";
-import Home from "./Home";
 // import Particles from "react-particles-js";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import Search from "./Search";
 
 function App() {
   const particlesInit = async (main) => {
@@ -26,7 +23,12 @@ function App() {
             enable: true,
             zIndex: 1,
           },
-          // SNOWFALL WLA MOTION
+
+
+          //  FOR  SNOWFALL  MOTION
+
+
+
           // particles: {
           //   number: {
           //     value: 50,
@@ -57,6 +59,8 @@ function App() {
           //     },
           //   },
           // },
+
+          
           // NORMAL MOTION OF THE PARTICLE JS
           particles: {
             number: {
@@ -294,8 +298,6 @@ function App() {
 
       <Event />
 
-      <Footer />
-      <Search />
     </div>
   );
 }
